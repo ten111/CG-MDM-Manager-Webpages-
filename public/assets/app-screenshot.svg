@@ -1,0 +1,181 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 840" width="100%" height="100%" role="img" aria-label="CG MDM Manager Android App Interface">
+  <defs>
+    <!-- Device Shadows -->
+    <filter id="phoneShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="16" stdDeviation="24" flood-color="#0F172A" flood-opacity="0.18"/>
+    </filter>
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0D47A1"/>
+      <stop offset="60%" stop-color="#1565C0"/>
+      <stop offset="100%" stop-color="#1976D2"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Phone Outer Frame -->
+  <rect x="10" y="10" width="400" height="820" rx="42" fill="#0F172A" filter="url(#phoneShadow)"/>
+  <!-- Phone Bezel Rim -->
+  <rect x="12" y="12" width="396" height="816" rx="40" fill="#1E293B" stroke="#334155" stroke-width="2"/>
+  <!-- Phone Screen Display Area -->
+  <rect x="20" y="24" width="380" height="792" rx="32" fill="#F8FAFC"/>
+
+  <!-- Clip Path for Screen Content -->
+  <clipPath id="screenClip">
+    <rect x="20" y="24" width="380" height="792" rx="32"/>
+  </clipPath>
+
+  <g clip-path="url(#screenClip)">
+    <!-- STATUS BAR -->
+    <rect x="20" y="24" width="380" height="32" fill="#0D47A1"/>
+    <!-- Camera Punch Hole -->
+    <circle cx="210" cy="40" r="5" fill="#000000"/>
+    <!-- Status Bar Icons -->
+    <text x="44" y="44" fill="#FFFFFF" font-family="-apple-system, system-ui, sans-serif" font-size="12" font-weight="600">19:30</text>
+    <g transform="translate(340, 34) scale(0.7)" fill="#FFFFFF">
+      <!-- Signal -->
+      <path d="M0,12 L3,12 L3,8 L0,8 Z M5,12 L8,12 L8,5 L5,5 Z M10,12 L13,12 L13,2 L10,2 Z"/>
+      <!-- Battery -->
+      <rect x="18" y="2" width="16" height="9" rx="2" fill="none" stroke="#FFFFFF" stroke-width="1.5"/>
+      <rect x="35" y="5" width="2" height="3" fill="#FFFFFF"/>
+      <rect x="20" y="4" width="11" height="5" fill="#FFFFFF"/>
+    </g>
+
+    <!-- APP HEADER BAR -->
+    <rect x="20" y="56" width="380" height="66" fill="url(#headerGrad)"/>
+    <!-- Logo Thumbnail in Header -->
+    <circle cx="56" cy="89" r="19" fill="#FFFFFF" stroke="#BBDEFB" stroke-width="2"/>
+    <!-- Mini Logo Representation -->
+    <circle cx="56" cy="89" r="14" fill="#E3F2FD"/>
+    <path d="M 47,89 Q 56,98 65,89 Z" fill="#FB8C00"/>
+    <circle cx="52" cy="84" r="3" fill="#1E88E5"/>
+    <circle cx="56" cy="82" r="3.2" fill="#43A047"/>
+    <circle cx="60" cy="84" r="3" fill="#E53935"/>
+
+    <!-- App Title & Subtitle in Header -->
+    <text x="86" y="82" fill="#FFFFFF" font-family="-apple-system, system-ui, sans-serif" font-size="15" font-weight="700">अधिक मेनू एवं सेटिंग्स</text>
+    <text x="86" y="98" fill="#E3F2FD" font-family="-apple-system, system-ui, sans-serif" font-size="10.5" font-weight="400">विद्यालय विवरण, शिक्षक, ऑडिट लॉग्स एवं नियम</text>
+
+    <!-- Language Selector Pill Button -->
+    <rect x="325" y="76" width="62" height="26" rx="13" fill="#1976D2" stroke="#64B5F6" stroke-width="1.2"/>
+    <text x="356" y="93" fill="#FFFFFF" font-family="-apple-system, system-ui, sans-serif" font-size="11" font-weight="600" text-anchor="middle">文A हिन्दी</text>
+
+    <!-- MAIN BODY CONTENT -->
+    <!-- Section 1 Heading -->
+    <text x="36" y="146" fill="#0F172A" font-family="-apple-system, system-ui, sans-serif" font-size="12.5" font-weight="700">क्लाउड बैकअप एवं डेटा सुरक्षा (Cloud Backup)</text>
+
+    <!-- Card 1: Google Drive Cloud Backup -->
+    <rect x="36" y="158" width="348" height="74" rx="14" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.2"/>
+    <!-- Icon Circle -->
+    <circle cx="68" cy="195" r="19" fill="#E0F2FE"/>
+    <g transform="translate(58, 185)" fill="none" stroke="#0284C7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M14 6 A4 4 0 0 1 18 10 A3 3 0 0 1 17 16 L6 16 A4 4 0 0 1 5 8 A5 5 0 0 1 14 6 Z"/>
+      <path d="M10 10 L10 14 M8 12 L10 10 L12 12"/>
+    </g>
+    <!-- Text -->
+    <text x="98" y="186" fill="#0F172A" font-family="-apple-system, system-ui, sans-serif" font-size="13" font-weight="700">Google Drive क्लाउड बैकअप इंजन</text>
+    <text x="98" y="202" fill="#64748B" font-family="-apple-system, system-ui, sans-serif" font-size="10">शाला डेटा का स्वचालित Google Drive बैकअप, रीस्टोर एवं लोकल</text>
+    <text x="98" y="214" fill="#64748B" font-family="-apple-system, system-ui, sans-serif" font-size="10">एक्सपोर्ट</text>
+    <!-- Chevron -->
+    <path d="M 364,192 L 368,195 L 364,198" fill="none" stroke="#94A3B8" stroke-width="2" stroke-linecap="round"/>
+
+    <!-- Section 2 Heading -->
+    <text x="36" y="254" fill="#0F172A" font-family="-apple-system, system-ui, sans-serif" font-size="12.5" font-weight="700">ऑडिट एवं सुरक्षा लॉग्स</text>
+
+    <!-- Card 2: Audit Trail -->
+    <rect x="36" y="266" width="348" height="66" rx="14" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.2"/>
+    <circle cx="68" cy="299" r="19" fill="#E0F2FE"/>
+    <g transform="translate(58, 289)" fill="none" stroke="#0284C7" stroke-width="2" stroke-linecap="round">
+      <circle cx="10" cy="10" r="8"/>
+      <polyline points="10 5 10 10 14 10"/>
+    </g>
+    <text x="98" y="295" fill="#0F172A" font-family="-apple-system, system-ui, sans-serif" font-size="13" font-weight="700">ऑडिट ट्रेल लॉग्स (Audit Trail)</text>
+    <text x="98" y="311" fill="#64748B" font-family="-apple-system, system-ui, sans-serif" font-size="10">समस्त प्रविष्टियों एवं संपादन का सुरक्षित इतिहास (61 लॉग्स)</text>
+    <path d="M 364,296 L 368,299 L 364,302" fill="none" stroke="#94A3B8" stroke-width="2" stroke-linecap="round"/>
+
+    <!-- Card 3: Logout & App Lock -->
+    <rect x="36" y="342" width="348" height="66" rx="14" fill="#FFF5F5" stroke="#FECACA" stroke-width="1.2"/>
+    <circle cx="68" cy="375" r="19" fill="#FEE2E2"/>
+    <g transform="translate(58, 365)" fill="none" stroke="#DC2626" stroke-width="2" stroke-linecap="round">
+      <path d="M9 3H5a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h4"/>
+      <polyline points="13 13 17 9 13 5"/>
+      <line x1="17" y1="9" x2="6" y2="9"/>
+    </g>
+    <text x="98" y="371" fill="#DC2626" font-family="-apple-system, system-ui, sans-serif" font-size="13" font-weight="700">लॉगआउट एवं ऐप लॉक (Sign Out)</text>
+    <text x="98" y="387" fill="#EF4444" font-family="-apple-system, system-ui, sans-serif" font-size="10">सत्र समाप्त करें और 4-अंकीय पिन सुरक्षा सक्रिय करें</text>
+    <path d="M 364,372 L 368,375 L 364,378" fill="none" stroke="#DC2626" stroke-width="2" stroke-linecap="round"/>
+
+    <!-- Section 3: About App Center Box -->
+    <rect x="36" y="426" width="348" height="236" rx="18" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.2"/>
+    
+    <!-- Central Round App Logo -->
+    <circle cx="210" cy="482" r="34" fill="#FFFFFF" stroke="#0D47A1" stroke-width="2.5"/>
+    <circle cx="210" cy="482" r="30" fill="#F8FAFC"/>
+    <!-- Kids Silhouette in App Box -->
+    <g transform="translate(192, 464) scale(0.65)">
+      <circle cx="10" cy="12" r="5" fill="#1E88E5"/>
+      <circle cx="20" cy="10" r="5.5" fill="#43A047"/>
+      <circle cx="30" cy="11" r="5" fill="#E53935"/>
+      <circle cx="38" cy="13" r="4.5" fill="#8E24AA"/>
+      <!-- Meal bowl -->
+      <ellipse cx="28" cy="28" rx="14" ry="5" fill="#FB8C00"/>
+      <path d="M 14,28 Q 28,42 42,28 Z" fill="#E65100"/>
+    </g>
+    <!-- Logo Arc Label -->
+    <text x="210" y="510" fill="#0D47A1" font-family="-apple-system, system-ui, sans-serif" font-size="6.5" font-weight="800" text-anchor="middle" letter-spacing="1">CG MDM MANAGER</text>
+
+    <!-- App Title & Details -->
+    <text x="210" y="540" fill="#1565C0" font-family="-apple-system, system-ui, sans-serif" font-size="18" font-weight="800" text-anchor="middle">CG MDM Manager</text>
+    <text x="210" y="560" fill="#1E293B" font-family="-apple-system, system-ui, sans-serif" font-size="11.5" font-weight="600" text-anchor="middle">“बच्चों का पोषण, डिजिटल प्रबंधन के साथ।”</text>
+    <text x="210" y="578" fill="#475569" font-family="-apple-system, system-ui, sans-serif" font-size="11" font-weight="500" text-anchor="middle">Child nutrition, powered by digital management.</text>
+    
+    <text x="210" y="602" fill="#64748B" font-family="-apple-system, system-ui, sans-serif" font-size="11" font-weight="600" text-anchor="middle">Version 1.0</text>
+    <text x="210" y="622" fill="#334155" font-family="-apple-system, system-ui, sans-serif" font-size="11.5" font-weight="600" text-anchor="middle">Developed by - E Kosh Tech Solutions</text>
+    <text x="210" y="638" fill="#475569" font-family="-apple-system, system-ui, sans-serif" font-size="11" font-weight="500" text-anchor="middle">E-Mail : krish.7m@gmail.com</text>
+
+    <!-- BOTTOM NAVIGATION BAR (6 TABS) -->
+    <rect x="20" y="740" width="380" height="76" fill="#EFF6FF" stroke="#DBEAFE" stroke-width="1"/>
+    
+    <!-- Tab 1: Dashboard -->
+    <g transform="translate(52, 752)">
+      <path d="M-6,6 L0,1 L6,6 L6,12 L2,12 L2,8 L-2,8 L-2,12 L-6,12 Z" fill="#334155"/>
+      <text x="0" y="24" fill="#475569" font-family="-apple-system, system-ui, sans-serif" font-size="8.5" font-weight="600" text-anchor="middle">डैशबोर्ड</text>
+    </g>
+
+    <!-- Tab 2: Daily Meal -->
+    <g transform="translate(114, 752)">
+      <path d="M-4,1 L-4,7 M-2,1 L-2,7 M-6,1 L-6,7 M-4,7 L-4,12 M3,1 C4,3 5,6 3,8 L3,12" stroke="#334155" stroke-width="1.3" fill="none"/>
+      <text x="0" y="24" fill="#475569" font-family="-apple-system, system-ui, sans-serif" font-size="8.5" font-weight="600" text-anchor="middle">दैनिक भोजन</text>
+    </g>
+
+    <!-- Tab 3: Monthly Meal -->
+    <g transform="translate(178, 752)">
+      <rect x="-6" y="2" width="12" height="10" rx="1.5" fill="none" stroke="#334155" stroke-width="1.2"/>
+      <line x1="-6" y1="5" x2="6" y2="5" stroke="#334155" stroke-width="1.2"/>
+      <text x="0" y="24" fill="#475569" font-family="-apple-system, system-ui, sans-serif" font-size="8.5" font-weight="600" text-anchor="middle">मासिक भोजन</text>
+    </g>
+
+    <!-- Tab 4: Stock -->
+    <g transform="translate(242, 752)">
+      <rect x="-6" y="3" width="12" height="8" rx="1.5" fill="none" stroke="#334155" stroke-width="1.2"/>
+      <line x1="-3" y1="6" x2="3" y2="6" stroke="#334155" stroke-width="1.2"/>
+      <text x="0" y="24" fill="#475569" font-family="-apple-system, system-ui, sans-serif" font-size="8.5" font-weight="600" text-anchor="middle">स्टॉक</text>
+    </g>
+
+    <!-- Tab 5: Reports -->
+    <g transform="translate(306, 752)">
+      <rect x="-6" y="6" width="3" height="6" fill="#334155"/>
+      <rect x="-1" y="2" width="3" height="10" fill="#334155"/>
+      <rect x="4" y="4" width="3" height="8" fill="#334155"/>
+      <text x="0" y="24" fill="#475569" font-family="-apple-system, system-ui, sans-serif" font-size="8.5" font-weight="600" text-anchor="middle">प्रतिवेदन</text>
+    </g>
+
+    <!-- Tab 6: More (Active Blue Pill) -->
+    <g transform="translate(366, 746)">
+      <rect x="-24" y="0" width="48" height="22" rx="11" fill="#BFDBFE"/>
+      <!-- Hamburger Icon -->
+      <line x1="-8" y1="7" x2="8" y2="7" stroke="#1D4ED8" stroke-width="2" stroke-linecap="round"/>
+      <line x1="-8" y1="11" x2="8" y2="11" stroke="#1D4ED8" stroke-width="2" stroke-linecap="round"/>
+      <line x1="-8" y1="15" x2="8" y2="15" stroke="#1D4ED8" stroke-width="2" stroke-linecap="round"/>
+      <text x="0" y="30" fill="#1D4ED8" font-family="-apple-system, system-ui, sans-serif" font-size="9" font-weight="700" text-anchor="middle">अधिक</text>
+    </g>
+  </g>
+</svg>

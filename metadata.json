@@ -1,0 +1,6 @@
+{
+  "name": "CG MDM Manager",
+  "description": "Official website for CG MDM Manager - Digital Management Solution for Mid-Day Meal and PM POSHAN activities in schools.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
